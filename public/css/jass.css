@@ -1,19 +1,21 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
-  
+  .jumbotron {
+    text-align: center;
+  }
   
   .navbar {
     border-bottom: solid black 2px;
     background-color: rgba(12, 87, 16, 0.507);
   }
   
-  .loginBox {
+  .loginBox, .signUp {
     display: flex;
     justify-content: center;
   }
   
-   .login {
+   .login, .signup {
      border: solid black 2px;
      background-color: rgba(50, 110, 50, 0.493);
    }

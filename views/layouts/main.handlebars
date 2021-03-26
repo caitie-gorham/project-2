@@ -12,7 +12,7 @@
   <div class="flex-column justify-space-around">
     <header class="display-flex navbar justify-space-between align-center p-2">
       <h1>
-        <a href="/">Project 2</a>
+        <a href="/">Home Grown</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
@@ -20,7 +20,11 @@
         <a href="/profile">profile</a> |
         <button class="btn btn-primary" id="logout">logout</button>
         {{else}}
+        {{#if not_signed_up}}
+        <a href="/login">login</a>
+        {{else}}
         <a href="/signup">signup</a>
+        {{/if}}
         {{/if}}
       </nav>
     </header>
