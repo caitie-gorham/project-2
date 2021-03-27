@@ -3,7 +3,7 @@ const Plants = require('./Plants');
 const Notes = require('./Notes');
 const Join = require('./Join');
 
-Plants.belongsToMany(Users, {
+Plants.belongsToMany(User, {
     through: {
         model: Join,
         unique: false
@@ -24,7 +24,7 @@ Notes.belongsTo(User, {
 });
 
 Notes.belongsTo(Plants, {
-    foreignKey: 'plant_id'
+    foreignKey: 'plants_id'
 });
 
 module.exports = { User, Notes, Plants, Join };

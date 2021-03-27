@@ -15,7 +15,7 @@ Join.init( {
         primaryKey: true,
         autoIncrement: true,
       },
-      plants_id: {
+      plant_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'plants',
