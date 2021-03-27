@@ -16,23 +16,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('./:id', async (req, res) => {
-  try {
-      const userData = await User.findByPk(req.params.id, {
-          include: [{ model: Plants, through: Join, as: 'table_join'}]
-      });
-
-      if(!userData) {
-          res.status(404).json({ message: 'Cannot find this user!' });
-          return;
-      }
-      res.status(200).json(userData);
-  } catch (err) {
-      res.status(500).json(err);
-  }
-})
-
-
 router.post('/signup', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });

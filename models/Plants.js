@@ -3,23 +3,23 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class Plants extends Model {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
+    checkPassword(loginPw) {
+        return bcrypt.compareSync(loginPw, this.password);
+    }
 }
 
-Plants.init( {
+Plants.init({
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
-      },
-      name: {
-          type: DataTypes.STRING,
-          allowNull: false,
-      },
-      scientific_name: {
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    scientific_name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
@@ -37,16 +37,16 @@ Plants.init( {
         allowNull: false,
     },
 
-    
 
-  
+
+
 },
-{
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'plants',
-}
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'plants',
+    }
 );
 module.exports = Plants;

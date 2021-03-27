@@ -1,22 +1,27 @@
 const router = require('express').Router();
 const { Plants, User, Join } = require('../../models');
+const auth = require('../../utils/auth');
 
 // GET all plants
 
-router.get('/', async (req, res) => {
+router.get('/', auth, async (req, res) => {
     try {
       const plantData = await Plants.findAll();
-      res.status(200).json(plantData);
+      const plants = plantData.map((plant) => plant.get({plain:true}));
+      // logic to actually interate under each plant under this user and get({plain:true})
+      res.render("profile", {
+        plants,
+      });
     } catch (err) {
-      res.status(500).json(err);
+      res.redirect("login");
     }
   });
 
 // Get a single plant
 
-router.get('./:id', async (req, res) => {
+router.get('/:id', auth, async (req, res) => {
     try {
-        const plantData = await Plants.findByPk(req.params.id, {
+        const plantData = await Plants.findByPk(req.session.plant_id, {
             include: [{ model: User, through: Join, as: 'join_table'}]
         });
 
