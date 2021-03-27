@@ -17,12 +17,11 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/profile">My Greenhouse</a> |
         <button class="btn btn-primary" id="logout">logout</button>
         {{else}}
         <a href="/login">Login</a>
         <a href="/signup">Signup</a>
-        <a href="/greenhouse">My Greenhouse</a>
         {{/if}}
       </nav>
     </header>
