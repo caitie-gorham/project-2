@@ -1,0 +1,17 @@
+[
+    {
+        "name": "John Wick",
+        "email": "jw@gmail.com",
+        "password": "iloveDogs"
+    },
+    {
+        "name": "Frank Smith",
+        "email": "fs@gmail.com",
+        "password": "iloveDogs2"
+    },
+    {
+        "name": "John Smith",
+        "email": "js@gmail.com",
+        "password": "iloveDogs3"
+    }
+]

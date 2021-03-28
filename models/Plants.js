@@ -15,16 +15,17 @@ Plants.init({
         primaryKey: true,
         autoIncrement: true,
     },
+    // add an image url here?
     name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(100),
         allowNull: false,
     },
     scientific_name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1000),
         allowNull: false,
     },
     sunlight_care: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1000),
         allowNull: false,
     },
     indoor: {
@@ -33,7 +34,7 @@ Plants.init({
         defaultValue: true,
     },
     watering_tips: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1000),
         allowNull: false,
     },
 

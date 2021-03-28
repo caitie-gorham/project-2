@@ -80,4 +80,4 @@ router.delete(':/id', async(req, res) => {
     }
 });
 
-module.exports = notes;
+module.exports = router;
