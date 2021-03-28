@@ -1,107 +1,107 @@
 [
     {
-        "name": "snake plant",
+        "name": "Snake plant",
         "scientific_name": "Dracaena trifasciata",
         "sunlight_care": "prefers bright light, can survive in lower light",
-        "indoor": "yes",
-        "watering_tips": "watever every 2 to 8 weeks"
+        "indoor": true,
+        "watering_tips": "water every 2 to 8 weeks"
     },
     {
-        "name": "ceriman or swiss cheese plant",
+        "name": "Ceriman or Swiss cheese plant",
         "scientific_name": "Monstera Deliciosa",
         "sunlight_care": "bright to medium indirect light, good light or shade, keep out of direct sunlight",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "water every 1 to 2 weeks"
     },
     {
         "name": "Pothos",
         "scientific_name": "Epipremnum aureum",
         "sunlight_care": "lower light and dry air make conditins less than ideal",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "water every 1-2 weeks"
     },
     {
         "name": "Darcaena",
         "scientific_name": "Darcaena fragrans",
         "sunlight_care": "easily adapts to different light environments, best kept away from direct sun",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "water every 10-14 days"
     },
     {
         "name": "ZZ Plant",
         "scientific_name": "Zamioculcas",
         "sunlight_care": "lower light",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "watering once a month during growing season (spring & summer), once every two months during its dorman season (fall)"
     },
     {
         "name": "Spider Plant",
         "scientific_name": "Chlorophytum comosum",
         "sunlight_care": "bright light but no direct sun. Perfect to put in a room with big windows",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "once a week"
     },
     {
         "name": "Rubber Tree",
         "scientific_name": "Hevea brasiliensis",
         "sunlight_care": "needs bright light can take some partial sunlight",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "during growing season (summer) the plant should be kept moist. This includes wiping the leaves with a damp cloth or even misting them. During dormant season the rubber tree plant may only need water once or twice a month"
     },
     {
         "name": "Birds Nest Fern",
         "scientific_name": "Asplenium nidus",
         "sunlight_care": "thrives in medium indirect light and a humd environment. Does great in a bathroom with a shower with a window that receives natural light",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "water every 1-2 weeks. Expect to water more often in brighter light and less often in lower light"
     },
     {
         "name": "Peace Lily",
         "scientific_name": "Spathiphyllum",
         "sunlight_care": "place in bright but shady spot",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "water about once a week and spritz leaves with water throughout the summer will keep your peace lily hydrated"
     },
     {
         "name": "Philodendron Green",
         "scientific_name": "Philodendron hederaceum",
         "sunlight_care": "medium light and bright indirect sunlight",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "every 1-2 weeks, allowing soil to dry out between waterings. Increase frequency with increased light"
     },
     {
         "name": "Aloe Vera",
         "scientific_name": "Aloe barbadensis miller",
         "sunlight_care": "put in a bright sunny spot",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "once a week during warmer months, once every 2 weeks in winter"
     },
     {
         "name": "Fiddle Leaf Fig",
         "scientific_name": "Ficus lyrata",
         "sunlight_care": "grows best with consistent, bright, filtered light. Turn the plant every few months once it begins to lean towards the light. It wil prefer an east facing, sunny window as afternoon sun from a south or west facing window will be too strong and will burn the leaves.",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "once a week or every 10 days"
     },
     {
         "name": "Elephant Ear",
         "scientific_name": "Colocasia",
         "sunlight_care": "a large amount of filtered sunlight is preferable",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "2-3 inches of water per week"  
     },
     {
         "name": "Peperomia",
         "scientific_name": "Peperomia obtusifolia",
         "sunlight_care": "best in bright, indirect sunlight. An east or west facing window sill is ideal for them at most times of the year",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "does best when watered from the root. Sit in a pan of water for a few minutes every 7 to 10 days"
     },
     {
         "name": "Chinese Money Plant",
         "scientific_name": "Pilea peperomioides",
         "sunlight_care": "loves access to bright light but not direct sunlight. Light shade encourages larger leaves to grow",
-        "indoor": "yes",
+        "indoor": true,
         "watering_tips": "deeply water once a week and allow the top 2-3 inches of the soil to dry between waterings"
     }
 ]

@@ -1,0 +1,12 @@
+[
+    {
+        "note": "My notes",
+        "plants_id": 1,
+        "user_id": 1
+    },
+    {
+        "note": "My notes!",
+        "plants_id": 2,
+        "user_id": 3
+    }
+]
