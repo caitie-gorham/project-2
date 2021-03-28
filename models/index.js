@@ -3,7 +3,7 @@ const Plants = require('./Plants');
 const Notes = require('./Notes');
 const Join = require('./Join');
 
-Plants.belongsToMany(Users, {
+Plants.belongsToMany(User, {
     through: {
         model: Join,
         unique: false
