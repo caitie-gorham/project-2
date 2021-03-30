@@ -1,6 +1,18 @@
 const router = require('express').Router();
 const { Join } = require('../../models');
 
+// get route for all join data
+
+router.get('/', async (req, res) => {
+
+    try {
+      const joinData = await Join.findAll();
+          res.status(200).json(joinData);
+    } catch (err) {
+      res.redirect("login");
+    }
+  });
+
 // create a record
 
 router.post('/', async (req,res) => {
