@@ -10,164 +10,36 @@
     </section>
     <!-- row 2 -->
     <section class="row">
+            {{#if plants.length}}
         <section class="col-md-3 plants">
+            {{#each plants as |plant|}}
             <div class="card" style="width: 18rem;">
                 <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">{{plant.name}}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
+                {{/each}}
             </div>
+              {{/if}}
         </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="row">
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="row">
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-3 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="row">
-        <section class="col-md-4 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-4 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section>
-        <section class="col-md-4 plants">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </section> 
-    </section>
+        
     </main>
+
+    {{#if projects.length}}
+  <div class="col-md-6 project-list">
+    <h3>Current Projects:</h3>
+
+    {{#each projects as |project|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
