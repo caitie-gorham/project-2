@@ -1,5 +1,3 @@
-
-
 <main class="container">
     <!-- row 1 / heading for entire section -->
     <section class="row greenhouse">
@@ -10,36 +8,48 @@
     </section>
     <!-- row 2 -->
     <section class="row">
-            {{#if plants.length}}
+        {{#if plants.length}}
         <section class="col-md-3 plants">
             {{#each plants as |plant|}}
             <div class="card" style="width: 18rem;">
-                <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="..." class="card-img-top" alt="...">
+                <img src="{{url}}"
+                    class="card-img-top" alt="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{plant.name}}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">{{plants.name}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{scientific_name}}</li>
+                        <li class="list-group-item">{{sunlight_care}}</li>
+                        <li class="list-group-item">{{indoor}}</li>
+                        <li class="list-group-item">{{indoor}}</li>
+                        <li class="list-group-item">{{Notes.note}}</li>
+                        <li class="list-group-item">{{indoor}}</li>
+                    </ul>
+                    <div class="modal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {{/each}}
             </div>
-              {{/if}}
+            {{/if}}
         </section>
-        
-    </main>
 
-    {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
-
-    {{#each projects as |project|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
+</main>
