@@ -4,104 +4,119 @@
         "scientific_name": "Dracaena trifasciata",
         "sunlight_care": "prefers bright light, can survive in lower light",
         "indoor": true,
-        "watering_tips": "water every 2 to 8 weeks"
+        "watering_tips": "water every 2 to 8 weeks",
+        "url": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-laurentii_variant_medium_hyde_blush_1200x.jpg?v=1616184560"
     },
     {
         "name": "Ceriman or Swiss cheese plant",
         "scientific_name": "Monstera Deliciosa",
         "sunlight_care": "bright to medium indirect light, good light or shade, keep out of direct sunlight",
         "indoor": true,
-        "watering_tips": "water every 1 to 2 weeks"
+        "watering_tips": "water every 1 to 2 weeks",
+        "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-490131664-612x612-1597694354.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*"
     },
     {
         "name": "Pothos",
         "scientific_name": "Epipremnum aureum",
         "sunlight_care": "lower light and dry air make conditins less than ideal",
         "indoor": true,
-        "watering_tips": "water every 1-2 weeks"
+        "watering_tips": "water every 1-2 weeks",
+        "url": "https://houseplantresourcecenter.com/wp-content/uploads/2020/09/severin-candrian-IZz3sboy1g8-unsplash.jpg"
     },
     {
         "name": "Darcaena",
         "scientific_name": "Darcaena fragrans",
         "sunlight_care": "easily adapts to different light environments, best kept away from direct sun",
         "indoor": true,
-        "watering_tips": "water every 10-14 days"
+        "watering_tips": "water every 10-14 days",
+        "url": "https://cdn.shopify.com/s/files/1/2375/8087/products/IMG_6394.jpg?v=1594146749"
     },
     {
         "name": "ZZ Plant",
         "scientific_name": "Zamioculcas",
         "sunlight_care": "lower light",
         "indoor": true,
-        "watering_tips": "watering once a month during growing season (spring & summer), once every two months during its dorman season (fall)"
+        "watering_tips": "watering once a month during growing season (spring & summer), once every two months during its dorman season (fall)",
+        "url": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_zz-plant_variant_medium_hyde_blush_1200x.jpg?v=1616528314"
     },
     {
         "name": "Spider Plant",
         "scientific_name": "Chlorophytum comosum",
         "sunlight_care": "bright light but no direct sun. Perfect to put in a room with big windows",
         "indoor": true,
-        "watering_tips": "once a week"
+        "watering_tips": "once a week",
+        "url": "https://cdn.shopify.com/s/files/1/0212/1030/0480/products/spider-plant_2_560x560_crop_center.jpg?v=1616007405"
     },
     {
         "name": "Rubber Tree",
         "scientific_name": "Hevea brasiliensis",
         "sunlight_care": "needs bright light can take some partial sunlight",
         "indoor": true,
-        "watering_tips": "during growing season (summer) the plant should be kept moist. This includes wiping the leaves with a damp cloth or even misting them. During dormant season the rubber tree plant may only need water once or twice a month"
+        "watering_tips": "during growing season (summer) the plant should be kept moist. This includes wiping the leaves with a damp cloth or even misting them. During dormant season the rubber tree plant may only need water once or twice a month",
+        "url": "https://i.pinimg.com/originals/73/33/55/7333550f24c8bfbd8f7317fde368e9ac.jpg"
     },
     {
         "name": "Birds Nest Fern",
         "scientific_name": "Asplenium nidus",
         "sunlight_care": "thrives in medium indirect light and a humd environment. Does great in a bathroom with a shower with a window that receives natural light",
         "indoor": true,
-        "watering_tips": "water every 1-2 weeks. Expect to water more often in brighter light and less often in lower light"
+        "watering_tips": "water every 1-2 weeks. Expect to water more often in brighter light and less often in lower light",
+        "url": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_birds-nest-fern_variant_medium_grant_cream_1200x.jpg?v=1614882807"
     },
     {
         "name": "Peace Lily",
         "scientific_name": "Spathiphyllum",
         "sunlight_care": "place in bright but shady spot",
         "indoor": true,
-        "watering_tips": "water about once a week and spritz leaves with water throughout the summer will keep your peace lily hydrated"
+        "watering_tips": "water about once a week and spritz leaves with water throughout the summer will keep your peace lily hydrated",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_q_XxKP0lzcU2M-6mPHKhlYmMc2r6QIwWPWiLSzZo-uIh5Ukxl4XqOJSESU&usqp=CAc"
     },
     {
         "name": "Philodendron Green",
         "scientific_name": "Philodendron hederaceum",
         "sunlight_care": "medium light and bright indirect sunlight",
         "indoor": true,
-        "watering_tips": "every 1-2 weeks, allowing soil to dry out between waterings. Increase frequency with increased light"
+        "watering_tips": "every 1-2 weeks, allowing soil to dry out between waterings. Increase frequency with increased light",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_359jLVjpaWd2qYjK4wLSxE1a9eg6WOIN5MXZgYCtTgPOSvTtQJJxiJGNlsaCDADr9c85G2s&usqp=CAc"
     },
     {
         "name": "Aloe Vera",
         "scientific_name": "Aloe barbadensis miller",
         "sunlight_care": "put in a bright sunny spot",
         "indoor": true,
-        "watering_tips": "once a week during warmer months, once every 2 weeks in winter"
+        "watering_tips": "once a week during warmer months, once every 2 weeks in winter",
+        "url": "https://s7d1.scene7.com/is/image/terrain/53770426_000_a?$zoom2$"
     },
     {
         "name": "Fiddle Leaf Fig",
         "scientific_name": "Ficus lyrata",
         "sunlight_care": "grows best with consistent, bright, filtered light. Turn the plant every few months once it begins to lean towards the light. It wil prefer an east facing, sunny window as afternoon sun from a south or west facing window will be too strong and will burn the leaves.",
         "indoor": true,
-        "watering_tips": "once a week or every 10 days"
+        "watering_tips": "once a week or every 10 days",
+        "url": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_large-fiddle-leaf-fig-bush_variant_large_burbank_almond.jpg?v=1616726628"
     },
     {
         "name": "Elephant Ear",
         "scientific_name": "Colocasia",
         "sunlight_care": "a large amount of filtered sunlight is preferable",
         "indoor": true,
-        "watering_tips": "2-3 inches of water per week"  
+        "watering_tips": "2-3 inches of water per week" ,
+        "url": "https://i.pinimg.com/originals/02/2e/61/022e61fab604de12fdb0c8567804ec36.jpg" 
     },
     {
         "name": "Peperomia",
         "scientific_name": "Peperomia obtusifolia",
         "sunlight_care": "best in bright, indirect sunlight. An east or west facing window sill is ideal for them at most times of the year",
         "indoor": true,
-        "watering_tips": "does best when watered from the root. Sit in a pan of water for a few minutes every 7 to 10 days"
+        "watering_tips": "does best when watered from the root. Sit in a pan of water for a few minutes every 7 to 10 days",
+        "url": "https://www.waysidegardens.com/images/xxl/v2442.jpg"
     },
     {
         "name": "Chinese Money Plant",
         "scientific_name": "Pilea peperomioides",
         "sunlight_care": "loves access to bright light but not direct sunlight. Light shade encourages larger leaves to grow",
         "indoor": true,
-        "watering_tips": "deeply water once a week and allow the top 2-3 inches of the soil to dry between waterings"
+        "watering_tips": "deeply water once a week and allow the top 2-3 inches of the soil to dry between waterings",
+        "url": "https://cdn.shopify.com/s/files/1/0174/7796/products/8D2A1989_2048x2048.jpg?v=1595286173"
     }
 ]
