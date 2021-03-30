@@ -15,7 +15,10 @@ Plants.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    // add an image url here?
+    url: {
+        type: DataTypes.STRING(200),
+        allowNull: false,
+    },
     name: {
         type: DataTypes.STRING(100),
         allowNull: false,
