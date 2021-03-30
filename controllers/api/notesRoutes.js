@@ -3,10 +3,10 @@ const { Notes, Plants, User } = require('../../models');
 
 // get all notes
 
-router.get('./', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const noteData = await Notes.findAll({
-            include: [{ model: User}, { model: Plants }],
+            // include: [{ model: User}, { model: Plants }],
         });
         res.status(200).json(noteData);
     } catch (err) {
@@ -14,12 +14,22 @@ router.get('./', async (req, res) => {
     }
 });
 
+// router.get('/', async (req, res) => {
+
+//     try {
+//         const noteData = await Notes.findAll();
+//         res.status(200).json(noteData);
+//     } catch (err) {
+//         res.redirect("login");
+//     }
+// });
+
 // get one note
 
-router.get('./:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const noteData = await Notes.findByPk(req.params.id, {
-            include: [{ model: User}, { model: Plants }],
+            include: [{ model: User }, { model: Plants }],
         });
         if (!noteData) {
             res.status(404).json({ message: 'No note found with that id!' });
@@ -44,12 +54,12 @@ router.post('/', async (req, res) => {
 
 // update a note
 
-router.put(':/id', async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
-        const noteData = await Notes.update (
+        const noteData = await Notes.update(
             {
                 note: req.body.note
-            }, 
+            },
             {
                 where: {
                     id: req.params.id
@@ -63,7 +73,7 @@ router.put(':/id', async (req, res) => {
 
 // delete a note
 
-router.delete(':/id', async(req, res) => {
+router.delete(':/id', async (req, res) => {
     try {
         const noteData = await Notes.destroy({
             where: {

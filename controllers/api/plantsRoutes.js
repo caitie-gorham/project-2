@@ -8,32 +8,20 @@ router.get('/', async (req, res) => {
 
     try {
       const plantData = await Plants.findAll();
-      const plants = plantData.map((plant) => plant.get({plain:true}));
+    //   const plants = plantData.map((plant) => plant.get({plain:true}));
       // logic to actually interate under each plant under this user and get({plain:true})
-      // res.render("profile", {
-      //   plants,
-          res.status(200).json(plants);
+          res.status(200).json(plantData);
     } catch (err) {
       res.redirect("login");
     }
   });
 
-// router.get('/', async (req, res) => {
-//   try {
-//     const plantData = await Location.findAll();
-//     res.status(200).json(plantData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-
 // Get a single plant
 
-router.get('/:id', auth, async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
-        const plantData = await Plants.findByPk(req.session.plant_id, {
-            include: [{ model: User, through: Join, as: 'join_table'}]
+        const plantData = await Plants.findByPk(req.params.id, {
+            // include: [{ model: User, through: Join, as: 'join_table'}]
         });
 
         if(!plantData) {
