@@ -15,14 +15,12 @@
                 <img src="{{url}}"
                     class="card-img-top" alt="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{plants.name}}</h5>
+                    <h5 class="card-title">{{plant.name}}</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">{{scientific_name}}</li>
-                        <li class="list-group-item">{{sunlight_care}}</li>
-                        <li class="list-group-item">{{indoor}}</li>
-                        <li class="list-group-item">{{indoor}}</li>
-                        <li class="list-group-item">{{Notes.note}}</li>
-                        <li class="list-group-item">{{indoor}}</li>
+                        <li class="list-group-item">{{plant.scientific_name}}</li>
+                        <li class="list-group-item">{{plant.sunlight_care}}</li>
+                        <li class="list-group-item">{{plant.indoor}}</li>
+                        <li class="list-group-item">{{plant.watering_tips}}</li>
                     </ul>
                     <div class="modal" tabindex="-1">
                         <div class="modal-dialog">
