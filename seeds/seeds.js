@@ -9,7 +9,7 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
   const Users = await User.bulkCreate(UserSeedData);
-  // const Notation = await Notes.bulkCreate(NotesSeedData);
+  
   const PlantVar = await Plants.bulkCreate(PlantsSeedData);
 
   // Create one record at random
@@ -35,7 +35,7 @@ const seedDatabase = async () => {
       console.log(err);
     });
   }
-
+  const Notation = await Notes.bulkCreate(NotesSeedData);
   process.exit(0);
 };
 

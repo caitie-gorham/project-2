@@ -19,7 +19,7 @@ Notes.init( {
           type: DataTypes.STRING,
           allowNull: false,
       },
-      plant_id: {
+      plants_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'plants',
