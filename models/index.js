@@ -1,19 +1,19 @@
 const User = require('./User');
 const Plants = require('./Plants');
 const Notes = require('./Notes');
-const Join = require('./Join');
+const Greenhouse = require('./Greenhouse');
 
 Plants.belongsToMany(User, {
     through: {
-        model: Join,
+        model: Greenhouse,
         unique: false
     },
-    as: "join_table"
+    as: "greenhouse_table"
 });
 
 User.belongsToMany(Plants, {
     through: {
-        model: Join,
+        model: Greenhouse,
         unique: false
     },
     as: 'user_plants'
@@ -27,4 +27,4 @@ Notes.belongsTo(Plants, {
     foreignKey: 'plants_id'
 });
 
-module.exports = { User, Notes, Plants, Join };
+module.exports = { User, Notes, Plants, Greenhouse };
