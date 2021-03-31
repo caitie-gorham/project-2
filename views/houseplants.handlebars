@@ -12,8 +12,7 @@
         <section class="col-md-3 plants">
             {{#each plants as |plant|}}
             <div class="card" style="width: 18rem;">
-                <img src="{{url}}"
-                    class="card-img-top" alt="..." class="card-img-top" alt="...">
+                <img src="{{plant.url}}" class="card-img-top" alt="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{plant.name}}</h5>
                     <ul class="list-group list-group-flush">

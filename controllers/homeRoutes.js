@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Project, User } = require("../models");
+const { Plants, User, Join } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -18,6 +18,7 @@ router.get("/profile", withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
+      include: [{model: Plants, through: Join, as: "user_plants"}]
     });
 
     const user = userData.get({ plain: true });
@@ -27,24 +28,25 @@ router.get("/profile", withAuth, async (req, res) => {
       logged_in: true,
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
 
 router.get("/houseplants", withAuth, async (req, res) => {
   try {
+    console.log("in houesplantss route")
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-    });
+    const plantsData = await Plants.findAll();
 
-    const user = userData.get({ plain: true });
-
+    const plants = plantsData.map(plant => plant.get({ plain: true }));
+    console.log(plants);
     res.render("houseplants", {
-      ...user,
+      plants,
       logged_in: true,
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
