@@ -1,11 +1,12 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
-  .plants {
-    display: flex;
-    justify-content: space-around;
-  }
-  
+   .plants {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+}
+   
    .jumbotron, .greenhouse {
     text-align: center;
   }

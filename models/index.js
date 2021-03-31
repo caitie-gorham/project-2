@@ -16,7 +16,7 @@ User.belongsToMany(Plants, {
         model: Join,
         unique: false
     },
-    as: 'table_join'
+    as: 'user_plants'
 });
 
 Notes.belongsTo(User, {
