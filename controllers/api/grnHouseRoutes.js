@@ -1,13 +1,13 @@
 const router = require('express').Router();
-const { Join } = require('../../models');
+const { Greenhouse } = require('../../models');
 
-// get route for all join data
+// get route for all Greenhouse data
 
 router.get('/', async (req, res) => {
 
     try {
-      const joinData = await Join.findAll();
-          res.status(200).json(joinData);
+      const greenhouseData = await Greenhouse.findAll();
+          res.status(200).json(greenhouseData);
     } catch (err) {
       res.redirect("login");
     }
@@ -17,8 +17,8 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req,res) => {
     try {
-        const joinData = await Join.create(req.body);
-        res.status(200).json(joinData)
+        const greenhouseData = await Greenhouse.create(req.body);
+        res.status(200).json(greenhouseData)
     } catch (err) {
         res.status(400).json(err);
     }
@@ -28,10 +28,10 @@ router.post('/', async (req,res) => {
 
 router.delete('/:id', async (req,res) => {
     try {
-        const joinData = await Join.destroy({
+        const greenhouseData = await Greenhouse.destroy({
             where: { id: req.params.id }
         });
-        if (!joinData) {
+        if (!greenhouseData) {
             res.status(404).json({ message: "No plant/user combo exists with that id" });
             return;
         }

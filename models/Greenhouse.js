@@ -2,13 +2,13 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Join extends Model {
+class Greenhouse extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-Join.init( {
+Greenhouse.init( {
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -40,7 +40,7 @@ Join.init( {
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'join',
+    modelName: 'greenhouse',
 }
 );
-module.exports = Join;
+module.exports = Greenhouse;

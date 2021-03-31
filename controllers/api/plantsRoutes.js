@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Plants, User, Join } = require('../../models');
+const { Plants, User, Greenhouse } = require('../../models');
 const auth = require('../../utils/auth');
 
 // GET all plants
@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const plantData = await Plants.findByPk(req.params.id, {
-            // include: [{ model: User, through: Join, as: 'join_table'}]
+            // include: [{ model: User, through: Greenhouse, as: 'greenhouse_table'}]
         });
 
         if(!plantData) {

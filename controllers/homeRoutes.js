@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Plants, User, Join } = require("../models");
+const { Plants, User, Greenhouse } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -18,7 +18,7 @@ router.get("/profile", withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
-      include: [{model: Plants, through: Join, as: "user_plants"}]
+      include: [{model: Plants, through: Greenhouse, as: "user_plants"}]
     });
 
     const user = userData.get({ plain: true });
