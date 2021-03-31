@@ -7,27 +7,25 @@
         <hr>
     </section>
     <!-- row 2 -->
-    <div class="col-md-5 flex-row">
+    <div class="row">
         {{#if plants}}
-        <div class="card" style="width: 18rem;">
-            {{#each plants as |plant|}}
-            <img src="{{plant.url}}" class="card-img-top" alt="...">
-            <h5 class="card-title">{{plant.name}}</h5>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
-                <li class="list-group-item"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
-                <li class="list-group-item"><strong>Indoor:</strong> {{plant.indoor}}</li>
-                <li class="list-group-item"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
-            </ul>
-            <button type="button" class="btn btn-success save">Add Me</button>
-            {{/each}}
-            {{/if}}
+        {{#each plants as |plant|}}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{plant.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{plant.name}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
+                        <li class="list-group-item"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
+                        <li class="list-group-item"><strong>Indoor:</strong> {{plant.indoor}}</li>
+                        <li class="list-group-item"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
+                    </ul>
+                    <button type="button" class="btn btn-success save-plant">Add Me</button>
+                </div>
+            </div>
         </div>
+        {{/each}}
+        {{/if}}
     </div>
-
-
-
-
 </div>
-
-
