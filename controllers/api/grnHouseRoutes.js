@@ -16,8 +16,17 @@ router.get('/', async (req, res) => {
 // create a record
 
 router.post('/', async (req,res) => {
+    console.log("we hit the route!");
+    console.log(req.body);
+    console.log(req.session.user_id);
+
+    const newPlant = {
+        plant_id: req.body.plant_id,
+        user_id: req.session.user_id
+    }
+    console.log(newPlant);
     try {
-        const greenhouseData = await Greenhouse.create(req.body);
+        const greenhouseData = await Greenhouse.create(newPlant);
         res.status(200).json(greenhouseData)
     } catch (err) {
         res.status(400).json(err);

@@ -18,7 +18,7 @@ router.get("/profile", withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
-      include: [{model: Plants, through: Greenhouse, as: "user_plants"}]
+      include: [{ model: Plants, through: Greenhouse, as: "user_plants" }]
     });
 
     const user = userData.get({ plain: true });
@@ -34,12 +34,28 @@ router.get("/profile", withAuth, async (req, res) => {
 });
 
 router.get("/houseplants", withAuth, async (req, res) => {
+  const userId = req.session.user_id;
   try {
     console.log("in houesplantss route")
     // Find the logged in user based on the session ID
-    const plantsData = await Plants.findAll();
+    const plantsData = await Plants.findAll({
+      include: [{ model: User, as: "plant_users" }]
+    });
 
-    const plants = plantsData.map(plant => plant.get({ plain: true }));
+    const plants = plantsData.map(plant => {
+      const plantObject = plant.get({ plain: true });
+      let hasPlant = false;
+      if (plantObject.plant_users.length) {
+        plantObject.plant_users.forEach(user => {
+          console.log(user);
+          if (user.id = userId)
+            hasPlant = true;
+        });
+      }
+      plantObject.ownedByCurrentUser = hasPlant;
+      return plantObject;
+
+    });
     console.log(plants);
     res.render("houseplants", {
       plants,
