@@ -1,6 +1,6 @@
 <div class="row greenhouse">
   <div class="col-auto">
-    <h2>Welcome to the greenhouse, {{name}}!</h2>
+    <h2>Welcome to the Greenhouse, {{name}}!</h2>
   </div>
 </div>
 <br>
@@ -15,14 +15,29 @@
     <hr>
   </section>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-4 list-container">
-        <div class="card">
-          <ul class="list-group">
-          </ul>
+      <div class="row">
+        {{#if plants}}
+        {{#each plants as |plant|}}
+        <div class="col-md-4">
+            <div class="card green color">
+                <img src="{{plant.url}}" class="card-img-top plants" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">{{plant.name}}</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item color"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
+                        <li class="list-group-item color"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
+                        <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
+                        <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
+                    </ul>
+                    <textarea class="note-textarea" placeholder="Note Text"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-success save-plant">Save Note</button>
+                </div>
+            </div>
         </div>
-      </div>
+        {{/each}}
+        {{/if}}
+    </div>
   
   
 </main>

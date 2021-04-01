@@ -1,11 +1,22 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
-   .plants {
-    width: 200px; 
-    height: 200px;
-    object-fit: cover;
-}
+   .color {
+    background-color: rgba(56, 136, 56, 0.514);
+   }
+   
+   .green {
+    width: 302px;
+    height: 870px;
+  }
+  
+  
+  .plants {
+   width: 300px; 
+   height: 400px;
+   /* object-fit: cover; */
+  }
+
    
    .jumbotron, .greenhouse {
     text-align: center;
