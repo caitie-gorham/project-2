@@ -8,7 +8,7 @@ Plants.belongsToMany(User, {
         model: Greenhouse,
         unique: false
     },
-    as: "greenhouse_table"
+    as: "plant_users"
 });
 
 User.belongsToMany(Plants, {

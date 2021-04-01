@@ -1,10 +1,15 @@
+// get the plant id after we click on ADD ME to link to the signed in user 
+
 let plantTitle;
 let savePlantBtn;
 let plantList;
-
+console.log("/houseplants");
 if (window.location.pathname === '/houseplants') {
+  
   plantTitle = document.querySelector('.note-title');
-  savePlantBtn = document.querySelector('.save-plant');
+  document.addEventListener('.save-plant', () => {
+    console.log(this);
+  });
   plantList = document.querySelectorAll('.list-container .list-group');
 }
 
@@ -113,7 +118,7 @@ const handleRenderSaveBtn = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
-  if (window.location.pathname === '/notes') {
+  if (window.location.pathname === '/profile') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
 
@@ -158,7 +163,7 @@ const renderNoteList = async (notes) => {
     noteListItems.push(li);
   });
 
-  if (window.location.pathname === '/notes') {
+  if (window.location.pathname === '/profile') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
@@ -166,7 +171,7 @@ const renderNoteList = async (notes) => {
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-if (window.location.pathname === '/notes') {
+if (window.location.pathname === '/profile') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
