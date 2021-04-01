@@ -1,10 +1,16 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
+   .green {
+     width: 302px;
+     height: 870px;
+   }
+   
+   
    .plants {
-    width: 200px; 
-    height: 200px;
-    object-fit: cover;
+    width: 300px; 
+    height: 400px;
+    /* object-fit: cover; */
 }
    
    .jumbotron, .greenhouse {
@@ -43,6 +49,7 @@ html {
  */
 body {
   background-image: url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fi2.wp.com%2Fres.allmacwallpaper.com%2Fget%2FRetina-MacBook-Air-13-inch-wallpapers%2FPlants-at-a-botanical-gar-2560x1600%2F18443-11.jpg");
+  /* background-size: cover; */
   margin: 0;
 }
 
