@@ -38,10 +38,6 @@ Plants.init({
         type: DataTypes.STRING(1000),
         allowNull: false,
     },
-
-
-
-
 },
     {
         sequelize,

@@ -21,7 +21,7 @@ Greenhouse.init( {
         references: {
           model: 'plants',
           key: 'id',
-          unique: false
+          unique: true
         }
       },
       user_id: {
@@ -30,7 +30,7 @@ Greenhouse.init( {
         references: {
           model: 'user',
           key: 'id',
-          unique: false
+          unique: true
         }
       },
       //BONUS TURF
