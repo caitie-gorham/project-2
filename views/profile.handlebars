@@ -15,31 +15,31 @@
     <hr>
   </section>
 
-      <div class="row">
-        {{#if plants}}
-        {{#each plants as |plant|}}
-        <div class="col-md-4">
-            <div class="card green color">
-                <img src="{{plant.url}}" class="card-img-top plants" alt="...">
-                <div class="card-body">
-                    <h2 class="card-title">{{plant.name}}</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item color"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
-                        <li class="list-group-item color"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
-                        <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
-                        <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
-                    </ul>
-                    <textarea class="note-textarea" placeholder="Note Text"></textarea>
-                    <br>
-                    <button type="button" class="btn btn-success save-plant">Save Note</button>
-                </div>
-            </div>
+  <div class="row">
+    {{#if plants}}
+    {{#each plants as |plant|}}
+    <div class="col-md-4">
+      <div class="card green color">
+        <img src="{{plant.url}}" class="card-img-top plants" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">{{plant.name}}</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item color"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
+            <li class="list-group-item color"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
+            <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
+            <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
+          </ul>
+          <textarea class="note-textarea" placeholder="Note Text"></textarea>
+          <br>
+          <button type="button" class="btn btn-success save-plant">Save Note</button>
         </div>
-        {{/each}}
-        {{/if}}
+      </div>
     </div>
-  
-  
+    {{/each}}
+    {{/if}}
+  </div>
+
+
 </main>
 
 {{!-- <main class="container">
@@ -54,81 +54,78 @@
   <section class="row">
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+      </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
   </section>
@@ -136,81 +133,77 @@
   <section class="row">
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
   </section>
@@ -218,83 +211,79 @@
   <section class="row">
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
 
     <section class="col-md-3 plants">
       <div class="card" style="width: 18rem;">
-        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg" class="card-img-top" alt="...">
+        <img
+          src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/health_benefits_of_houseplants_slideshow/1800ss_getty_rf_golden_pathos.jpg"
+          class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item"><strong>Scientific Name: </strong></li>
+          <li class="list-group-item"><strong>Sunlight Care: </strong></li>
+          <li class="list-group-item"><strong>Indoor: </strong></li>
+          <li class="list-group-item"><strong>Watering Schedule: </strong></li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
       </div>
     </section>
   </section>
 
-</main>  --}}
+</main> --}}
