@@ -14,30 +14,31 @@
     <h1>Your Greenhouse</h1>
     <hr>
   </section>
-
-      <div class="row">
-        {{#if plants}}
-        {{#each plants as |plant|}}
-        <div class="col-md-4">
-            <div class="card green color">
-                <img src="{{plant.url}}" class="card-img-top plants" alt="...">
-                <div class="card-body">
-                    <h2 class="card-title">{{plant.name}}</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item color"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
-                        <li class="list-group-item color"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
-                        <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
-                        <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
-                    </ul>
-                    <textarea class="note-textarea" placeholder="Note Text"></textarea>
-                    <br>
-                    <button type="button" class="btn btn-success save-plant">Save Note</button>
-                </div>
-            </div>
+  {{!-- row 2 --}}
+  <div class="row">
+    {{#if user}}
+    {{#each user as |user|}}
+    <div class="col-md-4">
+      <div class="card green color">
+        <img src="{{user.url}}" class="card-img-top plants" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">{{user.name}}</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item color"><strong>Scientific Name:</strong> {{user.scientific_name}}</li>
+            <li class="list-group-item color"><strong>Sunlight Care:</strong> {{user.sunlight_care}}</li>
+            <li class="list-group-item color"><strong>Indoor:</strong> {{user.indoor}}</li>
+            <li class="list-group-item color"><strong>Watering Routine:</strong> {{user.watering_tips}}</li>
+          </ul>
+          <textarea class="note-textarea" placeholder="Note Text"></textarea>
+          <br>
+          <button type="button" class="btn btn-success save-user">Save Note</button>
         </div>
-        {{/each}}
-        {{/if}}
+      </div>
     </div>
-  
-  
+    {{/each}}
+    {{/if}}
+  </div>
+
+
 </main>
+<script src="/js/profile.js"></script>
