@@ -16,8 +16,8 @@
   </section>
   {{!-- row 2 --}}
   <div class="row">
-    {{#if myGreenhouse}}
-    {{#each myGreenhouse as |userPlant|}}
+    {{#if user_plants}}
+    {{#each user_plants as |userPlant|}}
     <div class="col-md-4">
       <div class="card green color">
         <img src="{{userPlant.url}}" class="card-img-top plants" alt="...">
@@ -38,8 +38,4 @@
     {{/each}}
     {{/if}}
   </div>
-
-
-
 </main>
-<script src="/js/profile.js"></script>
