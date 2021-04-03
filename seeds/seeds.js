@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Plants, Join, Notes } = require('../models');
+const { User, Plants, Greenhouse, Notes } = require('../models');
 
 const UserSeedData = require('../seeds/user.json');
 const PlantsSeedData = require('../seeds/plants.json');
@@ -25,7 +25,7 @@ const seedDatabase = async () => {
     ];
 
     // Create a new Notes with random `Notes_budget` and `User_amount` values, but with ids selected above
-    await Join.create({
+    await Greenhouse.create({
       // Notes_budget: (Math.random() * 10000 + 1000).toFixed(2),
       // User_amount: Math.floor(Math.random() * 10) + 1,
       user_id: randomUserId,

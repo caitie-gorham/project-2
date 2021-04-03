@@ -21,7 +21,12 @@
                         <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
                         <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
                     </ul>
-                    <button type="button" class="btn btn-success save-plant">Add Me</button>
+                    {{#if plant.ownedByCurrentUser}}
+                        <button type="button" class="btn btn-success save-plant" data-id={{plant.id}}>Add Me</button>
+                    {{/if}}
+                    {{#unless plant.ownedByCurrentUser}}
+                        <button type="button" class="btn btn-secondary" disabled data-id={{plant.id}}>Plant Added</button>
+                    {{/unless}}
                 </div>
             </div>
         </div>
@@ -29,3 +34,4 @@
         {{/if}}
     </div>
 </div>
+<script src="/js/houseplants.js"></script>
