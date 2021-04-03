@@ -28,7 +28,7 @@ Our primary challenge was using the many-to-many association to join our plants 
 ### Links   
 GitHub [https://github.com/caitie-gorham/project-2]  
 Homegrown Heroku link [https://homegrown-app-grizzlies.herokuapp.com/]  
-Presentation [https://www.canva.com/design/DAEajr6Qbno/share/preview?token=oGDumjlY9r73dYQKW8Uo6w&role=EDITOR&utm_content=DAEajr6Qbno&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton]  
+Presentation [https://www.canva.com/design/DAEajr6Qbno/dXlrJfrJZ6XyyMkd_A2zpw/view?utm_content=DAEajr6Qbno&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink]
 
 ### Screenshots  
 ![homegrown_login](https://user-images.githubusercontent.com/73868232/113459512-c2cce800-93e3-11eb-8c11-34f548e13384.png)  
