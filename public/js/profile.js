@@ -1,18 +1,33 @@
-// get the plant id after we click on ADD ME to link to the signed in user 
-// const Greenhouse = require("../../models"); 
-const myGreenhouse = [];
-
-const myPlants = (plant) => {
+const showUserPlants = (myPlants) => {
   return fetch('/api/greenhouse', {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-type': 'application/json',
     },
-    body: JSON.stringify(plant),
+    body: JSON.stringify(myPlants)
   });
 }
 
-myPlants();
+
+
+
+
+
+// get the plant id after we click on ADD ME to link to the signed in user 
+// const Greenhouse = require("../../models"); 
+// const myGreenhouse = [];
+
+// const myPlants = (plant) => {
+//   return fetch('/api/greenhouse', {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(plant),
+//   });
+// }
+
+// myPlants();
 // const plantInfo = () => {
 // if (req.session.user_id = greenhouse.user_id) {
 //   console.log(req.user_id);
