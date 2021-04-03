@@ -16,15 +16,19 @@ router.get("/", async (req, res) => {
 router.get("/profile", withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-      include: [{ model: Plants, through: Greenhouse, as: "user_plants" }]
+   const userData = await User.findAll({
+     include: [{model: Plants, through: Greenhouse, as: "user_plants"}],
+     where: {
+       id: req.session.user_id,
+     },
+   });
+    const myGreenhouse = userData.map(userPlant => {
+     const userPlantData = userPlant.get({ plain: true });
+     console.log("This is the users plants: ", userPlantData.user_plants);
     });
 
-    const user = userData.get({ plain: true });
-    console.log(user.user_plants);
     res.render("profile", {
-      ...user,
+      ...myGreenhouse,
       logged_in: true,
     });
   } catch (err) {
