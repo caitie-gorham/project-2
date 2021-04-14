@@ -17,23 +17,25 @@ Greenhouse.init( {
       },
       plant_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
           model: 'plants',
           key: 'id',
-          unique: false
+          unique: true
         }
       },
       user_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
           model: 'user',
           key: 'id',
-          unique: false
+          unique: true
         }
       },
-    
-
-  
+      //BONUS TURF
+      //add a 'beforeCreate' hook that checks our greenhouse table
+      // to see if we already have a record with the current combo of user_id / plant_id
 },
 {
     sequelize,
