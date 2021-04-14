@@ -11,17 +11,22 @@
         {{#if plants}}
         {{#each plants as |plant|}}
         <div class="col-md-4">
-            <div class="card green">
+            <div class="card green color">
                 <img src="{{plant.url}}" class="card-img-top plants" alt="...">
                 <div class="card-body">
                     <h2 class="card-title">{{plant.name}}</h2>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
-                        <li class="list-group-item"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
-                        <li class="list-group-item"><strong>Indoor:</strong> {{plant.indoor}}</li>
-                        <li class="list-group-item"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
+                        <li class="list-group-item color"><strong>Scientific Name:</strong> {{plant.scientific_name}}</li>
+                        <li class="list-group-item color"><strong>Sunlight Care:</strong> {{plant.sunlight_care}}</li>
+                        <li class="list-group-item color"><strong>Indoor:</strong> {{plant.indoor}}</li>
+                        <li class="list-group-item color"><strong>Watering Routine:</strong> {{plant.watering_tips}}</li>
                     </ul>
-                    <button type="button" class="btn btn-success save-plant">Add Me</button>
+                    {{#if plant.ownedByCurrentUser}}
+                        <button type="button" class="btn btn-success save-plant" data-id={{plant.id}}>Add Me</button>
+                    {{/if}}
+                    {{#unless plant.ownedByCurrentUser}}
+                        <button type="button" class="btn btn-secondary" disabled data-id={{plant.id}}>Plant Added</button>
+                    {{/unless}}
                 </div>
             </div>
         </div>
@@ -29,3 +34,4 @@
         {{/if}}
     </div>
 </div>
+<script src="/js/houseplants.js"></script>

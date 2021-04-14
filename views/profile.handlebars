@@ -14,15 +14,26 @@
     <h1>Your Greenhouse</h1>
     <hr>
   </section>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-4 list-container">
-        <div class="card">
-          <ul class="list-group">
+  {{!-- row 2 --}}
+  <div class="row">
+    {{#if user}}
+    {{#each user as |user|}}
+    <div class="col-md-4">
+      <div class="card green color">
+        <img src="{{user.url}}" class="card-img-top plants" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">{{user.name}}</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item color"><strong>Scientific Name:</strong> {{user.scientific_name}}</li>
+            <li class="list-group-item color"><strong>Sunlight Care:</strong> {{user.sunlight_care}}</li>
+            <li class="list-group-item color"><strong>Indoor:</strong> {{user.indoor}}</li>
+            <li class="list-group-item color"><strong>Watering Routine:</strong> {{user.watering_tips}}</li>
           </ul>
+          <textarea class="note-textarea" placeholder="Note Text"></textarea>
+          <br>
+          <button type="button" class="btn btn-success save-user">Save Note</button>
         </div>
       </div>
-
-
+    </div>
+  </div>
 </main>
